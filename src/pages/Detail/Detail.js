@@ -1,4 +1,5 @@
 import React from "react";
+import TopNav from "../List/TopNav";
 import "./Detail.scss";
 
 function Detail() {
@@ -6,27 +7,7 @@ function Detail() {
     <>
       {" "}
       <div className="Detail">
-        <nav>
-          <div id="logo">
-            <a id="logoGoHome" href="login.html">
-              WeBucks
-            </a>
-          </div>
-          <div id="menu">
-            <a className="menuClass" href="##">
-              COFFEE
-            </a>
-            <a className="menuClass" href="##">
-              MENU
-            </a>
-            <a className="menuClass" href="##">
-              STORE
-            </a>
-            <a className="menuClass" href="##">
-              WHAT'S NEW
-            </a>
-          </div>
-        </nav>
+        <TopNav />
         <header id="mainHeader">
           <div id="mainTitle">콜드 브루</div>
           <div id="map">

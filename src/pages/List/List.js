@@ -1,31 +1,12 @@
 import React from "react";
+import TopNav from "./TopNav";
 import "./List.scss";
 
 function List() {
   return (
     <>
       <div className="List">
-        <nav>
-          <div id="logo">
-            <a id="logoGoHome" href="login.html">
-              WeBucks
-            </a>
-          </div>
-          <div id="menu">
-            <a className="menuClass" href="##">
-              COFFEE
-            </a>
-            <a className="menuClass" href="##">
-              MENU
-            </a>
-            <a className="menuClass" href="##">
-              STORE
-            </a>
-            <a className="menuClass" href="##">
-              WHAT'S NEW
-            </a>
-          </div>
-        </nav>
+        <TopNav />
         <section>
           <div className="sectionDiv">
             <h1 className="coffeeType">콜드 브루 커피</h1>
