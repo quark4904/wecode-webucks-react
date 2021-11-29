@@ -36,7 +36,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 20px;
-    width: 30%;
+    width: 40%;
     color: #bfbfbf;
   }
 
@@ -45,12 +45,10 @@
   }
 
   .menuClass {
-    font-family: "Baloo Thambi 2", cursive;
     cursor: pointer;
   }
 
   section {
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

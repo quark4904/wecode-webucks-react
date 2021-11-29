@@ -4,4 +4,4 @@ import Login from "./pages/Login/Login";
 import List from "./pages/List/List";
 import Detail from "./pages/Detail/Detail";
 
-ReactDOM.render(<Login />, document.getElementById("root"));
+ReactDOM.render(<List />, document.getElementById("root"));
