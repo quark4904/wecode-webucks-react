@@ -4,7 +4,7 @@ import "./List.scss";
 function List() {
   return (
     <>
-      <div className="container">
+      <div className="List">
         <nav>
           <div id="logo">
             <a id="logoGoHome" href="login.html">

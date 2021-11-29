@@ -5,7 +5,7 @@ function Detail() {
   return (
     <>
       {" "}
-      <div className="container">
+      <div className="Detail">
         <nav>
           <div id="logo">
             <a id="logoGoHome" href="login.html">

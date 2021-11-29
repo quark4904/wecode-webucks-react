@@ -4,7 +4,7 @@ import "./Login.scss";
 function Login() {
   return (
     <>
-      <div className="container">
+      <div className="Login">
         <section>
           <div id="logo">WeBucks</div>
           <div id="login-container">
