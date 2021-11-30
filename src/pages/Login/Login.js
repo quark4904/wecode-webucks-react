@@ -1,8 +1,14 @@
 import React from "react";
 import "./Login.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const goToList = () => {
+    navigate("/list");
+  };
+
   return (
     <>
       <div className="Login">
@@ -15,9 +21,12 @@ function Login() {
               placeholder="전화번호, 사용자 이름 또는 이메일"
             />
             <input type="password" id="passwordInput" placeholder="비밀번호" />
-            <Link to="/list" id="login-button">
+            <button id="login-button" type="submit" onClick={goToList}>
               로그인
-            </Link>
+            </button>
+            {/* <Link to="/list" id="login-button">
+              로그인
+            </Link> */}
           </div>
           <div id="forgot-password">
             <p>비밀번호를 잊으셨나요?</p>

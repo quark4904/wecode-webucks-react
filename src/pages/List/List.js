@@ -1,5 +1,5 @@
 import React from "react";
-import TopNav from "./TopNav";
+import TopNav from "../Component/TopNav";
 import "./List.scss";
 import { Link } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import TopNav from "../List/TopNav";
+import TopNav from "../Component/TopNav";
 import "./Detail.scss";
 
 function Detail() {
