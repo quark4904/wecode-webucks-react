@@ -51,6 +51,9 @@ $border-color: #e4e4e4;
 
   #login-button {
     all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 40px;
     padding: 0 8px;
@@ -58,8 +61,11 @@ $border-color: #e4e4e4;
     border-radius: 4px;
     background-color: #add3eb;
     color: white;
-    text-align: center;
     font-size: 18px;
+  }
+
+  #login-button:hover {
+    cursor: pointer;
   }
 
   #forgot-password {

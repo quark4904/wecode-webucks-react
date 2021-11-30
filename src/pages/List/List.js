@@ -1,6 +1,7 @@
 import React from "react";
 import TopNav from "./TopNav";
 import "./List.scss";
+import { Link } from "react-router-dom";
 
 function List() {
   return (
@@ -18,12 +19,12 @@ function List() {
           <div className="coffeeImgsSection">
             <div className="coffeeWithTitle">
               <div className="imgHover">
-                <a className="coffeeDetail" href="detail.html">
+                <Link to="/detail" className="coffeeDetail">
                   <img
                     alt="화이트 초콜릿 모카"
                     src="/images/화이트 초콜릿 모카.jpeg"
                   />
-                </a>
+                </Link>
               </div>
               <p className="coffeeTitle">화이트 초콜릿 모카 🖤</p>
             </div>

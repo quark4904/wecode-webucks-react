@@ -1,14 +1,15 @@
 import React from "react";
 import "./List.scss";
+import { Link } from "react-router-dom";
 
 function TopNav() {
   return (
     <>
       <nav>
         <div id="logo">
-          <a id="logoGoHome" href="login.html">
+          <Link to="/" id="logoGoHome">
             WeBucks
-          </a>
+          </Link>
         </div>
         <div id="menu">
           <a className="menuClass" href="##">

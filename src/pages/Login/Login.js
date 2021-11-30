@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.scss";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -14,14 +15,9 @@ function Login() {
               placeholder="전화번호, 사용자 이름 또는 이메일"
             />
             <input type="password" id="passwordInput" placeholder="비밀번호" />
-            <button
-              id="login-button"
-              type="submit"
-              onclick="location.href='list.html'"
-              disabled
-            >
+            <Link to="/list" id="login-button">
               로그인
-            </button>
+            </Link>
           </div>
           <div id="forgot-password">
             <p>비밀번호를 잊으셨나요?</p>
