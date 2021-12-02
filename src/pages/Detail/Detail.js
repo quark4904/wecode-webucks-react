@@ -34,6 +34,7 @@ function Detail() {
         <section id="Information">
           <div>
             <img
+              className="detailImage"
               alt="화이트 초콜릿 모카"
               src="/images/화이트 초콜릿 모카.jpeg"
             />
