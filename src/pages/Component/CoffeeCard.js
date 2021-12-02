@@ -22,7 +22,7 @@ function CoffeeCard(props) {
     <div className="CoffeeCard">
       <div className="imgHover">
         <Link to="/detail" className="coffeeDetail">
-          <img alt="{props.name}" src={props.image} />
+          <img alt={props.name} src={props.image} />
         </Link>
       </div>
       <p className="coffeeTitle">{props.name}</p>

@@ -2,7 +2,7 @@ import React from "react";
 import TopNav from "../Component/TopNav";
 import "./List.scss";
 import { Link } from "react-router-dom";
-import CoffeeCard from "./CoffeeCard";
+import CoffeeCard from "../Component/CoffeeCard";
 import { ListDataCold, ListDataHot } from "./ListData";
 
 function List() {
@@ -14,8 +14,7 @@ function List() {
           <div className="sectionDiv">
             <h1 className="coffeeType">콜드 브루 커피</h1>
             <p className="specialOffer">
-              <i className="fas fa-mug-hot"></i>
-              디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
+              ☕디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
             </p>
           </div>
           <div className="coffeeImgsSection">
@@ -28,8 +27,7 @@ function List() {
           <div className="sectionDiv">
             <h1 className="coffeeType">브루드 커피</h1>
             <p className="specialOffer">
-              <i className="fas fa-mug-hot"></i>
-              디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
+              ☕디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
             </p>
           </div>
           <div className="coffeeImgsSection">
