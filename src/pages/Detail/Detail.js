@@ -5,7 +5,6 @@ import "./Detail.scss";
 function Detail() {
   return (
     <>
-      {" "}
       <div className="Detail">
         <TopNav />
         <header id="mainHeader">

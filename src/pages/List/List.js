@@ -2,6 +2,8 @@ import React from "react";
 import TopNav from "../Component/TopNav";
 import "./List.scss";
 import { Link } from "react-router-dom";
+import CoffeeCard from "./CoffeeCard";
+import { ListDataCold, ListDataHot } from "./ListData";
 
 function List() {
   return (
@@ -17,89 +19,9 @@ function List() {
             </p>
           </div>
           <div className="coffeeImgsSection">
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <Link to="/detail" className="coffeeDetail">
-                  <img
-                    alt="화이트 초콜릿 모카"
-                    src="/images/화이트 초콜릿 모카.jpeg"
-                  />
-                </Link>
-              </div>
-              <p className="coffeeTitle">화이트 초콜릿 모카 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img
-                  alt="나이트로 바닐라 크림"
-                  src="/images/나이트로 바닐라 크림.jpeg"
-                />
-              </div>
-              <p className="coffeeTitle">나이트로 바닐라 크림 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img
-                  alt="나이트로 콜드 브루"
-                  src="/images/나이트로 콜드 브루.png"
-                />
-              </div>
-              <p className="coffeeTitle">나이트로 콜드 브루 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img alt="돌체 콜드 브루" src="/images/돌체 콜드 브루.jpeg" />
-              </div>
-              <p className="coffeeTitle">돌체 콜드 브루 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img
-                  alt="바닐라 크림 콜드 브루"
-                  src="/images/바닐라 크림 콜드 브루.jpeg"
-                />
-              </div>
-              <p className="coffeeTitle">바닐라 크림 콜드 브루 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img
-                  alt="벨벳 다크 모카 나이트로"
-                  src="/images/벨벳 다크 모카 나이트로.jpeg"
-                />
-              </div>
-              <p className="coffeeTitle">벨벳 다크 모카 나이트로 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img
-                  alt="시그니처 더 블랙 콜드 브루"
-                  src="/images/시그니처 더 블랙 콜드 브루.jpeg"
-                />
-              </div>
-              <p className="coffeeTitle">시그니처 더 블랙 콜드 브루 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img
-                  alt="제주 비자림 콜드 브루"
-                  src="/images/제주 비자림 콜드 브루.jpeg"
-                />
-              </div>
-              <p className="coffeeTitle">제주 비자림 콜드 브루 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img alt="콜드 브루" src="/images/콜드 브루.jpeg" />
-              </div>
-              <p className="coffeeTitle">콜드 브루 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img alt="콜드 브루 몰트" src="/images/콜드 브루 몰트.jpeg" />
-              </div>
-              <p className="coffeeTitle">콜드 브루 몰트 🖤</p>
-            </div>
+            {ListDataCold.map((data) => {
+              return <CoffeeCard name={data.name} image={data.image} />;
+            })}
           </div>
         </section>
         <section>
@@ -111,18 +33,9 @@ function List() {
             </p>
           </div>
           <div className="coffeeImgsSection">
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img alt="아이스 커피" src="/images/아이스 커피.jpeg" />
-              </div>
-              <p className="coffeeTitle">아이스 커피 🖤</p>
-            </div>
-            <div className="coffeeWithTitle">
-              <div className="imgHover">
-                <img alt="오늘의 커피" src="/images/오늘의 커피.jpeg" />
-              </div>
-              <p className="coffeeTitle">오늘의 커피 🖤</p>
-            </div>
+            {ListDataHot.map((data) => {
+              return <CoffeeCard name={data.name} image={data.image} />;
+            })}
           </div>
         </section>
       </div>
