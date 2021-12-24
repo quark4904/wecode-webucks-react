@@ -1,5 +1,4 @@
 .Detail {
-  all: unset;
   box-sizing: border-box;
   background-color: white;
 
@@ -16,34 +15,6 @@
     margin: 5px 40px;
     background-color: #f6f5f0;
     border-radius: 5px;
-  }
-
-  #logo {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    height: 50px;
-    font-family: "Dancing Script", cursive;
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  #menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // flex-wrap: wrap;
-    padding: 0 20px;
-    width: 35%;
-    color: #bfbfbf;
-  }
-
-  #logoGoHome {
-    cursor: pointer;
-  }
-
-  .menuClass {
-    cursor: pointer;
   }
 
   #mainHeader {
@@ -68,11 +39,6 @@
     height: 70px;
     padding-right: 20px;
     color: #bfbfbf;
-  }
-
-  .menuClass {
-    padding: 0 5px;
-    font-size: 13px;
   }
 
   #Information {
@@ -182,41 +148,6 @@
   }
 
   #ingredientsAllergie {
-    padding: 10px 15px;
-    background-color: #efefef;
-    border-radius: 5px;
-  }
-
-  #reviewContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-  }
-
-  #reviewTitle {
-    padding: 0 0 10px 0;
-    font-size: 25px;
-    font-weight: 700;
-    border-bottom: 1px solid #bfbfbf;
-  }
-
-  #reviewDetail {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-  }
-
-  .reviewDetailPart {
-    display: flex;
-  }
-
-  .reviewID {
-    font-weight: 700;
-    margin: 0 10px 5px 0;
-  }
-
-  #reviewMessage {
     padding: 10px 15px;
     background-color: #efefef;
     border-radius: 5px;
